@@ -1,0 +1,81 @@
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   margin-top: 40px
+}
+
+.navbar-text > a {
+    color: #A8A7A7;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+.navbar-social ul{
+    display: inline-block;
+}
+
+.navbar-nav {
+    padding-right: 100px;
+}
+
+.navbar-inverse .navbar-collapse
+{
+    margin-right: 50px;
+}
+
+.navbar-inverse .nav li a {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #A8A7A7
+}
+
+.navbar-inverse .nav li a p.active {
+    border-bottom: 2px solid #A8A7A7;
+}
+
+.navbar-inverse .nav li a:hover, .navbar-default .nav li a:focus {
+    color: #252525;
+    outline: 0;
+}
+
+body{
+    padding-top: 70px;
+}
+
+.jumbotron {
+    background-image: url("../imgs/main.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-shadow: black 0.1em 0.3em 0.3em;
+
+}
+
+
+ul.social-buttons li a {
+    display: block;
+    /* background-color: #222; */
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 48px;
+    color: #A8A7A7;
+    outline: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+}
+
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+    color: #383838
+}
+
