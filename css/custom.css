@@ -102,6 +102,13 @@ body{
     padding-bottom: 30px;
 }
 
+p {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+}
+
 h1, h2, h3, h4, p{
     font-weight: normal;
     font-family: 'Raleway', sans-serif;
@@ -119,6 +126,11 @@ h1, h2, h3, h4, p{
     animation: fadein 3.5s;
     animation-fill-mode: forwards;
     visibility: hidden;
+}
+
+.content {
+    margin-top: 125px; 
+    text-align: center;
 }
 
 .about-fade {
@@ -186,4 +198,41 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
     color: #383838
 }
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.video {
+    height: 180px;
+    grid-column-start: span 3;
+    position: relative;
+    transition: var(--ease);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.video:hover {
+    transform: scale(1.02);
+}
+
+.video i {
+    cursor: pointer;
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+    opacity: 0.85;
+    transition: var(--ease);
+}
+
+.video i:hover {
+    opacity: 1;
+}
+
 

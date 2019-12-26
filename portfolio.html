@@ -11,8 +11,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" />
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -26,32 +28,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-    <script>
-      $(document).ready(function () {
-          $('img').on('click', function () {
-              var image = $(this).attr('src');
-              //alert(image);
-              $('#myModal').on('show.bs.modal', function () {
-                  $(".showimage").attr("src", image);
-              });
-          });
-      });
-    </script>
-
-  <script>
-    $(function() {
-      $(".video").click(function () {
-        var theModal = $(this).data("target"),
-        videoSRC = $(this).attr("data-video"),
-        videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-        $(theModal + ' iframe').attr('src', videoSRCauto);
-        $(theModal + ' button.close').click(function () {
-          $(theModal + ' iframe').attr('src', videoSRC);
-        });
-      });
-    });
-  </script>
 
   </head>
   <body>
@@ -76,7 +52,6 @@
             <li><a href="./about.html"><div>ABOUT</div></a></li>
             <li><a href="./code.html"><div>CODE</div></a></li>
             <li><a href="./portfolio.html"><div class="active">PORTFOLIO</div></a></li>
-            <li><a href="./contact.html"><div>CONTACT</div></a></li>
           </ul>
           <ul class="list-inline social-buttons">
             <li><a href="https://www.linkedin.com/in/anishshandilya"><i class="fa fa-linkedin"></i></a></li>
@@ -94,22 +69,66 @@
 </div>
  -->
 
- <div class="container" style="margin-top: 50px; text-align: center;">
+ <div class="container content">
    <div class="col-sm-12 media-fade">
       <h2> Videos </h2>
   </div>
-  <div class="container-fluid">
-    <div class="col-lg-4 thumb">
-      <img src="imgs/thumb/dubai.jpg" class="img-responsive video" data-video="https://www.youtube.com/embed/PnfRtWGEdok" data-toggle="modal" data-target="#videoModal" alt="">
+  <div class="container-fluid"> 
+    <div class="row">
+      <div class="col-lg-4 thumb">
+        <a class="venobox " data-autoplay="true" data-vbtype="video" href="https://youtu.be/AAeEmrKoJVA" data-gall="myGallery">
+          <img src="imgs/thumb/banff.jpg" class="img-responsive" alt=""></img>
+        </a>
+      </div>
+      <div class="col-lg-4 thumb">
+        <a class="venobox " data-autoplay="true" data-vbtype="video" href="https://youtu.be/eF1RNV1YIyA" data-gall="myGallery">
+          <img src="imgs/thumb/point_reyes.png" class="img-responsive" alt=""></img>
+        </a>
+      </div>
+      <div class="col-lg-4 thumb">
+        <a class="venobox " data-autoplay="true" data-vbtype="video" href="https://youtu.be/_4aaaN19g7o" data-gall="myGallery">
+          <img src="imgs/thumb/china.jpg" class="img-responsive" alt=""></img>
+        </a>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-4 thumb">
+        <a class="venobox " data-autoplay="true" data-vbtype="video" href="https://youtu.be/4Z7TBpyH4QM" data-gall="myGallery">
+          <img src="imgs/thumb/japan.jpg" class="img-responsive" alt=""></img>
+        </a>
+      </div>
+      <div class="col-lg-4 thumb">
+        <a class="venobox " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PnfRtWGEdok" data-gall="myGallery">
+          <img src="imgs/thumb/dubai.jpg" class="img-responsive" alt=""></img>
+        </a>
+      </div>
+      <div class="col-lg-4 thumb">
+        <a class="venobox " data-autoplay="true" data-vbtype="video" href="https://youtu.be/jKoo-_ap4vw" data-gall="myGallery">
+          <img src="imgs/thumb/coldplay.png" class="img-responsive" alt=""></img>
+        </a>
+      </div>
     </div>
-    <div class="col-lg-4 thumb">
+    <div class="row">
+      <div class="col-lg-4 thumb">
+        <a class="venobox " data-autoplay="true" data-vbtype="video" href="https://youtu.be/JFSDQdaleaA" data-gall="myGallery">
+          <img src="imgs/thumb/intro.png" class="img-responsive" alt=""></img>
+        </a>
+      </div>
+      <div class="col-lg-4 thumb">
+        <a class="venobox " data-autoplay="true" data-vbtype="video" href="https://youtu.be/tLXAWELFGTU" data-gall="myGallery">
+          <img src="imgs/thumb/spin.png" class="img-responsive" alt=""></img>
+        </a>
+      </div>
+    </div>
+      <!-- <img src="imgs/thumb/dubai.jpg" class="img-responsive video" data-video="https://www.youtube.com/embed/PnfRtWGEdok" data-toggle="modal" data-target="#videoModal" alt=""> -->
+    <!-- <div class="col-lg-4 thumb">
       <img src="imgs/thumb/intro.png" class="img-responsive video" data-video="https://www.youtube.com/embed/JFSDQdaleaA" data-toggle="modal" data-target="#videoModal" alt="">
     </div>
     <div class="col-lg-4 thumb">
       <img src="imgs/thumb/spin.png" class="img-responsive video" data-video="https://www.youtube.com/embed/tLXAWELFGTU" data-toggle="modal" data-target="#videoModal" alt="">
-    </div>
+    </div> -->
   </div>
-  <div class="col-sm-12 media-fade">
+  <!-- <div class="col-sm-12 media-fade">
     <h2> Photos </h2>
   </div>
   <div class="container-fluid">
@@ -140,7 +159,7 @@
     <div class="col-lg-4 thumb">
       <img src="imgs/thumb/food.jpg" class="img-responsive" data-toggle="modal" data-target="#myModal" alt="" id="9">
     </div>
-  </div>
+  </div> -->
 </div>
 
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -164,5 +183,19 @@
     </div>
 </div>
 
+<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="venobox/venobox.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.venobox').venobox({
+            closeColor: '#f4f4f4',
+            spinColor: '#f4f4f4',
+            arrowColor: '#f4f4f4',
+            closeBackground: '17191D',
+            overlayColor: 'rgba(23, 25, 29, 0.8)',
+            spinner: 'wave'
+        }); 
+    });
+</script>   
   </body>
 </html>
