@@ -36,8 +36,8 @@
 
 .navbar-inverse .navbar-collapse
 {
-    margin-bottom: 70px;
     border: none;
+    width: 100%;
 }
 
 .navbar-inverse .nav li a {
@@ -98,8 +98,8 @@
 
 
 body{
-    margin-top: 85px;
-    padding-bottom: 30px;
+    /* margin-top: 85px;
+    padding-bottom: 30px; */
 }
 
 p {
@@ -129,7 +129,7 @@ h1, h2, h3, h4, p{
 }
 
 .content {
-    margin-top: 75px; 
+    margin-top: 15px; 
     text-align: center;
 }
 
@@ -140,12 +140,6 @@ h1, h2, h3, h4, p{
 }
 
 .media-fade {
-    animation: fadein 3.5s;
-    animation-fill-mode: forwards;
-    visibility: hidden;
-}
-
-.contact-fade {
     animation: fadein 3.5s;
     animation-fill-mode: forwards;
     visibility: hidden;
@@ -165,7 +159,6 @@ h1, h2, h3, h4, p{
     padding: 10px;
 }
 
-
 .jumbotron {
     background-image: url("../imgs/main.jpg");
     background-position: top;
@@ -177,9 +170,10 @@ h1, h2, h3, h4, p{
     position: fixed;
     top: 0px;
     left: 0px;
-    text-shadow: black 0.1em 0.3em 0.3em;
     animation: fadein 3.5s;
-
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
 }
 
 ul.social-buttons li a {
